@@ -1,0 +1,862 @@
+2024-05-12 21:05:19,615 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 8312 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:05:19,617 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:05:19,618 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:05:20,382 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:05:20,440 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-05-12 21:05:21,066 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:05:21,081 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:05:21,082 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:05:21,083 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:05:21,139 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:05:21,140 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1455 ms
+2024-05-12 21:05:21,315 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:05:21,370 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:05:21,402 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:05:21,632 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:05:21,656 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:05:21,848 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3120495d
+2024-05-12 21:05:21,850 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:05:21,878 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:05:22,601 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:05:22,631 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:05:22,856 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:05:23,164 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:05:23,180 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:05:23,188 INFO r.m.p.PasteApplication [main] Started PasteApplication in 3.915 seconds (process running for 4.465)
+2024-05-12 21:05:33,756 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:05:33,756 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:05:33,765 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 8 ms
+2024-05-12 21:05:34,037 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:05:34,050 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:05:34,698 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:05:34,700 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:05:37,023 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2024-05-12 21:05:37,026 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2024-05-12 21:05:42,545 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:05:42,547 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:05:42,550 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:06:23,447 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 8596 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:06:23,448 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:06:23,448 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:06:24,165 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:06:24,207 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-05-12 21:06:24,757 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:06:24,768 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:06:24,770 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:06:24,770 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:06:24,830 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:06:24,830 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1299 ms
+2024-05-12 21:06:25,062 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:06:25,116 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:06:25,147 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:06:25,380 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:06:25,404 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:06:25,591 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@796c68bf
+2024-05-12 21:06:25,592 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:06:25,622 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:06:26,381 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:06:26,420 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:06:26,692 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:06:26,996 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:06:27,016 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:06:27,025 INFO r.m.p.PasteApplication [main] Started PasteApplication in 3.931 seconds (process running for 4.523)
+2024-05-12 21:06:27,078 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:06:27,078 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:06:27,079 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:06:27,343 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:06:27,356 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:06:42,961 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:06:56,104 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:06:56,107 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:06:56,110 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:25:11,858 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 10040 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:25:11,859 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:25:11,860 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:25:12,689 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:25:12,768 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-05-12 21:25:13,378 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:25:13,392 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:25:13,394 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:25:13,394 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:25:13,457 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:25:13,458 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1533 ms
+2024-05-12 21:25:13,629 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:25:13,689 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:25:13,720 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:25:13,962 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:25:13,983 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:25:14,175 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c60c681
+2024-05-12 21:25:14,177 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:25:14,209 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:25:14,946 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:25:14,960 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Warning Code: 0, SQLState: 00000
+2024-05-12 21:25:14,960 WARN o.h.e.j.s.SqlExceptionHelper [main] таблица "filedto" не существует, пропускается
+2024-05-12 21:25:14,982 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:25:15,310 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:25:15,626 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:25:15,641 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:25:15,649 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.145 seconds (process running for 4.758)
+2024-05-12 21:25:15,881 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:25:15,881 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:25:15,882 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:25:15,990 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:25:35,643 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:25:41,979 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:25:41,981 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:25:41,984 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:26:44,259 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 6140 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:26:44,261 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:26:44,262 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:26:45,066 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:26:45,113 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-05-12 21:26:45,681 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:26:45,696 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:26:45,698 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:26:45,698 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:26:45,751 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:26:45,751 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1401 ms
+2024-05-12 21:26:45,982 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:26:46,074 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:26:46,110 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:26:46,366 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:26:46,386 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:26:46,571 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b75b890
+2024-05-12 21:26:46,572 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:26:46,603 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:26:47,314 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:26:47,348 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:26:47,582 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:26:47,891 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:26:47,912 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:26:47,920 INFO r.m.p.PasteApplication [main] Started PasteApplication in 3.995 seconds (process running for 4.551)
+2024-05-12 21:26:48,596 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:26:48,597 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:26:48,598 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:26:48,873 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:26:48,889 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:26:54,764 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2024-05-12 21:26:54,767 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2024-05-12 21:27:38,663 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:27:38,664 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:27:38,667 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:27:48,057 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 8484 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:27:48,058 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:27:48,058 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:27:48,728 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:27:48,800 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-05-12 21:27:49,422 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:27:49,434 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:27:49,436 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:27:49,436 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:27:49,495 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:27:49,495 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1380 ms
+2024-05-12 21:27:49,696 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:27:49,743 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:27:49,781 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:27:50,004 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:27:50,026 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:27:50,210 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a0f349
+2024-05-12 21:27:50,213 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:27:50,242 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:27:51,003 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:27:51,038 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:27:51,298 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:27:51,624 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:27:51,650 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:27:51,657 INFO r.m.p.PasteApplication [main] Started PasteApplication in 3.923 seconds (process running for 4.563)
+2024-05-12 21:27:54,417 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:27:54,417 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:27:54,418 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:27:54,700 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:27:54,712 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:27:57,365 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:28:14,704 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:28:14,705 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:28:14,708 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:28:18,052 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 11832 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:28:18,055 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:28:18,056 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:28:18,777 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:28:18,822 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-05-12 21:28:19,556 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:28:19,567 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:28:19,569 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:28:19,569 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:28:19,628 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:28:19,628 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1510 ms
+2024-05-12 21:28:19,810 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:28:19,862 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:28:19,893 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:28:20,133 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:28:20,158 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:28:20,350 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3120495d
+2024-05-12 21:28:20,351 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:28:20,380 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:28:21,132 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:28:21,167 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:28:21,420 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:28:21,735 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:28:21,750 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:28:21,760 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.036 seconds (process running for 4.658)
+2024-05-12 21:28:51,932 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:28:51,934 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:28:51,937 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:28:58,259 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 5192 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:28:58,260 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:28:58,261 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:28:58,950 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:28:59,001 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-05-12 21:28:59,606 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:28:59,615 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:28:59,617 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:28:59,618 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:28:59,669 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:28:59,669 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1343 ms
+2024-05-12 21:28:59,853 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:28:59,917 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:28:59,960 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:29:00,189 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:29:00,213 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:29:00,394 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70c491b8
+2024-05-12 21:29:00,395 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:29:00,425 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:29:01,173 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:29:01,204 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:29:01,455 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:29:01,753 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:29:01,769 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:29:01,777 INFO r.m.p.PasteApplication [main] Started PasteApplication in 3.845 seconds (process running for 4.5)
+2024-05-12 21:29:09,871 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:29:09,871 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:29:09,873 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:29:09,997 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:29:17,631 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:29:17,633 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:29:17,635 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:29:19,773 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 6196 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:29:19,774 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:29:19,776 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:29:20,470 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:29:20,519 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-05-12 21:29:21,067 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:29:21,078 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:29:21,081 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:29:21,081 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:29:21,143 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:29:21,143 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1318 ms
+2024-05-12 21:29:21,341 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:29:21,399 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:29:21,430 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:29:21,670 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:29:21,695 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:29:21,895 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@239b98cb
+2024-05-12 21:29:21,897 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:29:21,932 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:29:22,851 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:29:22,885 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:29:23,141 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:29:23,467 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:29:23,484 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:29:23,492 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.188 seconds (process running for 4.798)
+2024-05-12 21:29:27,533 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:29:27,533 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:29:27,535 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-05-12 21:29:27,655 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:29:40,860 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:29:40,862 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:29:40,864 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:36:07,192 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 16976 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:36:07,193 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:36:07,193 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:36:07,870 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:36:07,923 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-05-12 21:36:08,501 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:36:08,510 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:36:08,512 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:36:08,513 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:36:08,577 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:36:08,577 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1334 ms
+2024-05-12 21:36:08,781 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:36:08,839 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:36:08,883 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:36:09,130 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:36:09,152 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:36:09,356 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fc0d9b4
+2024-05-12 21:36:09,358 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:36:09,392 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:36:10,173 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:36:10,211 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:36:10,506 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:36:10,823 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:36:10,839 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:36:10,852 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.022 seconds (process running for 4.789)
+2024-05-12 21:36:17,525 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:36:17,525 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:36:17,527 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-05-12 21:36:17,879 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:36:17,898 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:36:18,391 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:36:18,393 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:36:20,827 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Model has no value for key 'id'] with root cause
+java.lang.IllegalArgumentException: Model has no value for key 'id'
+	at org.springframework.web.servlet.view.RedirectView.replaceUriTemplateVariables(RedirectView.java:388)
+	at org.springframework.web.servlet.view.RedirectView.createTargetUrl(RedirectView.java:347)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:308)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-12 21:36:26,664 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:36:26,665 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:36:26,669 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:39:44,426 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 7680 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:39:44,427 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:39:44,428 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:39:45,214 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:39:45,269 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-05-12 21:39:45,855 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:39:45,863 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:39:45,865 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:39:45,866 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:39:45,923 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:39:45,923 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1427 ms
+2024-05-12 21:39:46,119 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:39:46,184 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:39:46,223 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:39:46,499 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:39:46,526 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:39:46,729 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a3cf824
+2024-05-12 21:39:46,730 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:39:46,769 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:39:47,597 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:39:47,631 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:39:47,906 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:39:48,258 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:39:48,276 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:39:48,291 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.275 seconds (process running for 4.995)
+2024-05-12 21:39:48,567 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:39:48,567 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:39:48,567 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-05-12 21:39:48,841 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:39:48,855 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:39:50,251 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:39:50,253 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:39:53,300 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][file_details] Deprecated unwrapped fragment expression "blocks/header :: header" found in template file_details, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:39:53,310 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][file_details] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template file_details, line 27, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:40:02,226 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:40:02,228 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:40:02,231 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:44:29,853 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 9908 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:44:29,854 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:44:29,856 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:44:30,618 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:44:30,671 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-05-12 21:44:31,304 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:44:31,319 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:44:31,321 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:44:31,322 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:44:31,402 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:44:31,402 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1478 ms
+2024-05-12 21:44:31,609 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:44:31,663 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:44:31,696 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:44:31,927 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:44:31,950 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:44:32,127 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a3cf824
+2024-05-12 21:44:32,129 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:44:32,157 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:44:32,957 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:44:32,998 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:44:33,297 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:44:33,651 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:44:33,670 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:44:33,678 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.17 seconds (process running for 4.74)
+2024-05-12 21:44:35,263 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:44:35,263 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:44:35,264 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:44:35,552 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:35,568 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:38,413 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:38,423 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:39,519 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:39,519 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:42,502 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:42,503 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:47,850 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:47,851 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:44:58,923 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:44:58,925 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:44:58,928 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:46:09,989 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 7632 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:46:09,991 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:46:09,992 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:46:10,737 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:46:10,784 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-05-12 21:46:11,403 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:46:11,416 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:46:11,419 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:46:11,419 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:46:11,475 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:46:11,475 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1410 ms
+2024-05-12 21:46:11,636 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:46:11,695 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:46:11,732 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:46:11,962 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:46:11,987 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:46:12,170 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@117b2cc6
+2024-05-12 21:46:12,171 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:46:12,198 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:46:12,976 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:46:13,007 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:46:13,276 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:46:13,611 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:46:13,632 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:46:13,641 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.013 seconds (process running for 4.537)
+2024-05-12 21:46:13,710 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:46:13,710 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:46:13,712 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-05-12 21:46:13,973 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:46:14,064 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:46:23,594 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:46:23,596 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:46:23,600 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:48:49,652 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 2512 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:48:49,654 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:48:49,654 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:48:50,340 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:48:50,388 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-05-12 21:48:50,964 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:48:50,974 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:48:50,976 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:48:50,976 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:48:51,032 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:48:51,032 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1325 ms
+2024-05-12 21:48:51,254 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:48:51,325 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:48:51,372 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:48:51,658 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:48:51,687 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:48:51,899 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3120495d
+2024-05-12 21:48:51,901 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:48:51,940 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:48:52,712 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:48:52,744 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:48:52,992 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:48:53,334 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:48:53,356 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:48:53,365 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.062 seconds (process running for 4.824)
+2024-05-12 21:48:57,952 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:48:57,952 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:48:57,953 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:48:58,226 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:48:58,242 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:48:59,388 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:48:59,390 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:04,520 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:04,532 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:06,057 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:06,058 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:10,691 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:49:10,693 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:49:10,697 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:49:43,525 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 10204 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:49:43,526 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:49:43,526 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:49:44,332 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:49:44,379 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-05-12 21:49:44,946 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:49:44,955 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:49:44,957 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:49:44,957 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:49:45,016 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:49:45,016 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1414 ms
+2024-05-12 21:49:45,222 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:49:45,268 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:49:45,305 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:49:45,532 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:49:45,552 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:49:45,729 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@117b2cc6
+2024-05-12 21:49:45,738 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:49:45,766 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:49:46,514 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:49:46,546 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:49:46,828 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:49:47,175 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:49:47,199 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:49:47,208 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.017 seconds (process running for 4.57)
+2024-05-12 21:49:48,062 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:49:48,062 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:49:48,064 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-05-12 21:49:48,360 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:48,371 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:49,552 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:49,552 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:49:53,453 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:49:53,454 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 21:49:53,458 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-12 21:50:14,346 INFO r.m.p.PasteApplication [main] Starting PasteApplication using Java 21 with PID 19240 (C:\Users\zik15\Desktop\pasteAPI\target\classes started by zik15 in C:\Users\zik15\Desktop\pasteAPI)
+2024-05-12 21:50:14,349 DEBUG r.m.p.PasteApplication [main] Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-12 21:50:14,350 INFO r.m.p.PasteApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-12 21:50:15,111 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12 21:50:15,161 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-05-12 21:50:15,774 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-05-12 21:50:15,786 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:50:15,788 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-05-12 21:50:15,789 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12 21:50:15,852 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-12 21:50:15,853 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1424 ms
+2024-05-12 21:50:16,033 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12 21:50:16,086 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-12 21:50:16,118 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-12 21:50:16,345 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12 21:50:16,368 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-12 21:50:16,555 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@591be8aa
+2024-05-12 21:50:16,556 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-12 21:50:16,586 WARN o.h.o.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12 21:50:17,340 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12 21:50:17,370 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 21:50:17,662 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12 21:50:17,986 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-12 21:50:18,001 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-05-12 21:50:18,008 INFO r.m.p.PasteApplication [main] Started PasteApplication in 4.004 seconds (process running for 4.532)
+2024-05-12 21:50:18,173 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12 21:50:18,173 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-12 21:50:18,174 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-05-12 21:50:18,467 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:18,480 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:19,610 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:19,620 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:22,454 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][main] Deprecated unwrapped fragment expression "blocks/header :: header" found in template main, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:22,455 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][main] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template main, line 12, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:23,021 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:23,023 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:25,946 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-10] [THYMELEAF][http-nio-8080-exec-10][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:25,947 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-10] [THYMELEAF][http-nio-8080-exec-10][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:28,333 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][add_file] Deprecated unwrapped fragment expression "blocks/header :: header" found in template add_file, line 11, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:28,333 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][add_file] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template add_file, line 21, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:31,348 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-9] [THYMELEAF][http-nio-8080-exec-9][files] Deprecated unwrapped fragment expression "blocks/header :: header" found in template files, line 10, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 21:50:31,350 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-9] [THYMELEAF][http-nio-8080-exec-9][files] Deprecated unwrapped fragment expression "blocks/footer :: footer" found in template files, line 26, col 9. Please use the complete syntax of fragment expressions instead ("~{blocks/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-05-12 22:06:19,849 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12 22:06:19,851 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-12 22:06:19,857 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

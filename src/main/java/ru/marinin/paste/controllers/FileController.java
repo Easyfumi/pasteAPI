@@ -1,6 +1,7 @@
 package ru.marinin.paste.controllers;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,11 +25,24 @@ public class FileController {
     public String addFile(@RequestParam MultipartFile file) {
         fileService.addFile(file);
         System.out.println("file added");
-        return "redirect:/files/{id}";
+        return "redirect:/files";
+    }
+
+    @GetMapping("/files")
+    public String allFiles(Model model) {
+        model.addAttribute("file", fileService.getAll());
+        return "files";
     }
 
     @GetMapping("/files/{id}")
-    public String viewFile(@PathVariable(value = "id") long id, Model model) {
-        return "file_details";
+    public String viewFile(@PathVariable(value = "id") Long id, Model model) {
+        model.addAttribute("file", fileService.getFileById(id));
+        return "files";
+    }
+
+    @PostMapping("/files/{id}/remove")
+    public String filePostDelete(@PathVariable(value = "id") Long id, Model model) {
+        fileService.deleteFile(id);
+        return "redirect:/files";
     }
 }

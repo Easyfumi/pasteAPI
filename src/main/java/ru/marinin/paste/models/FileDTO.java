@@ -1,9 +1,6 @@
 package ru.marinin.paste.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,10 +21,11 @@ public class FileDTO {
 
     private LocalDateTime dateOfCreated;
 
-    public FileDTO( String name) {
+    public FileDTO(String name) {
         this.name = name;
     }
 
+    @PrePersist
     private void init() {
         dateOfCreated = LocalDateTime.now();
     }
